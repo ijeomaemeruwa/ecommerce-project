@@ -1,0 +1,19 @@
+.section_one {
+    background: var(--white);
+    color: var(--secondary-color);
+    padding: 5px;
+    max-width: 100%;
+}
+
+.section_one_contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    margin-left: auto;
+}
+
+.section_one_contents span {
+    padding: 0 0.6rem;
+}

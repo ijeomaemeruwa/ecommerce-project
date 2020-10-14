@@ -1,0 +1,22 @@
+.header {
+    padding: 15px;
+    color: var(--secondary-color);
+    background: var(--white);
+    max-width: 100%;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);    
+}
+
+.header_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h2 {
+    text-align: center;
+}
+
+.header_features span {
+    padding: 0 1rem;
+}
