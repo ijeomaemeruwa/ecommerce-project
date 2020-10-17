@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Currency/Currency.css'
+import '../Currency/Currency.scss'
 
 export const Currency = () => {
     return (

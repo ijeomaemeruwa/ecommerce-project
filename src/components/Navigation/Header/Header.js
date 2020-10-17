@@ -12,7 +12,7 @@ export const Header = () => {
 
     <div><SearchRoundedIcon /></div>
 
-    <h2><a href="/" className="logo">OATS</a></h2>
+    <h2><a href="/" className="logo">OATTS</a></h2>
 
     <div className="header_features">
     <span><PersonOutlineRoundedIcon /></span>

@@ -1,0 +1,35 @@
+.product_grid {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+
+    &.medium {
+        width: 250px;
+        height: 350px;
+    }
+
+    .product_image {
+        width: 100%;
+        height: 90%;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 5px;
+    }
+
+    .product_details {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+
+        .title {
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    }
+
+
+}

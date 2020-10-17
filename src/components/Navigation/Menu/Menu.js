@@ -1,16 +1,16 @@
 import React from 'react'
-import '../Menu/Menu.css'
+import '../Menu/Menu.scss'
 
 export const Menu = () => {
     return (
         <div className="menu">
-        <div className="menu_content">
+        <div className="menu_content row">
 
-        <div>
-         <h3 className="makeup"><a href="/makeup" >MAKEUP</a></h3>
+        <div className="makeup col-md-6 col-sm-6 text-center">
+         <h3><a href="/makeup" >MAKEUP</a></h3>
         </div>
         
-        <div className="skincare">
+        <div className="skincare col-md-6 col-sm-6 text-center">
          <h3><a href="/skincare" >SKIN CARE</a></h3>
         </div>
 

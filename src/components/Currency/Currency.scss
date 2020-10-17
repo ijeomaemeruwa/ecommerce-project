@@ -1,9 +1,9 @@
 .section_one {
-    background: var(--white);
-    color: var(--secondary-color);
+    background: #000;
+    color: #fefffe;
     padding: 5px;
     max-width: 100%;
-}
+
 
 .section_one_contents {
     display: flex;
@@ -12,8 +12,11 @@
     align-items: flex-end;
     text-align: right;
     margin-left: auto;
+
+
+span {
+    padding: 0 1rem;
 }
 
-.section_one_contents span {
-    padding: 0 0.6rem;
+}
 }

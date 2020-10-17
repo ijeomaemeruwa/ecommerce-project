@@ -1,0 +1,40 @@
+.news_section {
+    background: #000;
+}
+
+.newsLetter {
+   
+    h3{
+      color: var(--accent-color);
+      letter-spacing: 2px;
+    }
+
+    .form {
+        padding: 15px;
+
+       input {
+           width: 350px;
+           padding: 10px;
+           font-weight: 400;
+           font-size: 17px;
+           border: 2px solid var(--primary-color);
+       }
+
+       .btn{
+           width: 150px;
+           font-weight: 400;
+           padding: 10px;
+           margin-bottom: 3px;
+           font-size: 17px;
+           border: 2px solid #000;
+           background-color: #000;
+           color: var(--accent-color);
+
+           &:hover {
+               background-color: #1f1f1f;
+               color: var(--primary-color);
+               border: 2px solid var(--primary-color);
+           }
+       }
+    }
+}
