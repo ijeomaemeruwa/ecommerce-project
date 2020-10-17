@@ -1,23 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
 
-/*
-font-family: 'Dancing Script', cursive;
-font-family: 'Questrial', sans-serif;
-font-family: 'Cormorant Garamond', serif;
-font-family: 'Nanum Myeongjo', serif;
-*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
 
 
 :root {
-  --primary-color: #fcf2ee;
+  --primary-color: #d5a796;
   --secondary-color: #757f6f;
-  --accent-color: #fadacb;
+  --accent-color:#f5e5df;
   --white: #fefffe;
-  --black: #2d2d2d;
-  --grey: #767676;
+  --black: #1f1f1f;
 }
 
 * {
@@ -27,13 +17,13 @@ font-family: 'Nanum Myeongjo', serif;
 }
 
 body {
-  font-family: 'Questrial', sans-serif;
-  background: var(--white);
+  font-family: 'Jost', sans-serif !important;
+  background: var(--white) !important;
 }
 
 .logo {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Jost', sans-serif;
   text-decoration: none;
   color: var(--secondary-color);
-  font-weight: 800 !important;
+  font-weight: 900 !important;
 }
