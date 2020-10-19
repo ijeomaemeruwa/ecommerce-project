@@ -8,11 +8,20 @@ export const NewsLetter = () => {
     <div className="newsLetter text-center p-5">
      <h3>Be the first to hear about new stock</h3>
      <form className="form">
-        <input type="email" placeholder="Email" />
-        <button className="btn" type="submit">SUBMIT</button>
+        <input type="email" placeholder="Email" /><br />
+        <button className="btn mt-3" type="submit">SUBMIT</button>
      </form>
     </div>
-    </section>      
+    </section> 
+
+    <div className="contact_payment">
+    <div>
+
+    </div>
+    <div>
+        
+    </div>
+    </div>     
     </div>
 )
 }

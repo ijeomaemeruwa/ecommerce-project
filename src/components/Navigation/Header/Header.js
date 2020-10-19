@@ -1,8 +1,9 @@
 import React from 'react'
 import '../Header/Header.css'
+import { Link } from 'react-router-dom'
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
-import PersonOutlineRoundedIcon from '@material-ui/icons/PersonOutlineRounded';
-import FavoriteBorderRoundedIcon from '@material-ui/icons/FavoriteBorderRounded';
+import { UserMenu } from '../UserMenu/UserMenu'
+
 import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
 
 export const Header = () => {
@@ -12,11 +13,10 @@ export const Header = () => {
 
     <div><SearchRoundedIcon /></div>
 
-    <h2><a href="/" className="logo">OATTS</a></h2>
+    <h2><Link to="/" className="logo">OATTS</Link></h2>
 
     <div className="header_features">
-    <span><PersonOutlineRoundedIcon /></span>
-    <span><FavoriteBorderRoundedIcon /></span>
+    <span><UserMenu /></span>
     <span><LocalMallOutlinedIcon /></span>
     </div>
 

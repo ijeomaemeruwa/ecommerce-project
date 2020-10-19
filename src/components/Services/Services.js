@@ -1,7 +1,7 @@
 import React from 'react'
-import '../Quotes/Quotes.scss'
+import '../Services/Services.scss'
 
-export const Quotes = ({ quote }) => {
+export const Services = ({ item }) => {
     return (
     <div>
             

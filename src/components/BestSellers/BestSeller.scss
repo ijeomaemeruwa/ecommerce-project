@@ -1,8 +1,7 @@
 .product_grid {
-    width: 22%;
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 100%;
     align-items: center;
 
     &.medium {
@@ -15,7 +14,7 @@
         height: 90%;
         background-size: cover;
         background-position: center;
-        margin-bottom: 5px;
+        padding: 8rem;
     }
 
     .product_details {
@@ -27,7 +26,7 @@
 
         .title {
             font-weight: bold;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
     }
 

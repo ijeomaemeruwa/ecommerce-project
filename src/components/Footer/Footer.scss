@@ -1,0 +1,25 @@
+footer {
+    background: var(--accent-color);
+    color: #1f1f1f;
+
+.footer_content {
+    padding: 2rem 4rem;
+       
+    h5 {
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    ul {
+        padding: 0.8rem 0;
+
+        li {
+            list-style: none;
+            cursor: pointer;
+        }
+    }
+}
+
+   
+}

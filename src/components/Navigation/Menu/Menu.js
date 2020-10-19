@@ -1,13 +1,14 @@
 import React from 'react'
 import '../Menu/Menu.scss'
+import { withRouter } from 'react-router-dom'
 
-export const Menu = () => {
+const Menu = () => {
     return (
         <div className="menu">
         <div className="menu_content row">
 
         <div className="makeup col-md-6 col-sm-6 text-center">
-         <h3><a href="/makeup" >MAKEUP</a></h3>
+         <h3><a href="/makeuppage" >MAKEUP</a></h3>
         </div>
         
         <div className="skincare col-md-6 col-sm-6 text-center">
@@ -18,3 +19,5 @@ export const Menu = () => {
         </div>
     )
 }
+
+export default withRouter(Menu);

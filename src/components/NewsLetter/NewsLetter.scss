@@ -1,11 +1,13 @@
 .news_section {
-    background: #000;
+    background: url('https://content.asos-media.com/-/media/homepages/unisex/homepages/2020/09-sept/peak-promo/textures/09/mob_hero_live_banner-_peak_squiggle_-9.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
 }
 
 .newsLetter {
    
     h3{
-      color: var(--accent-color);
+      color: #fff;
       letter-spacing: 2px;
     }
 
@@ -21,19 +23,18 @@
        }
 
        .btn{
-           width: 150px;
-           font-weight: 400;
+           width: 350px;
+           font-weight: bold;
            padding: 10px;
            margin-bottom: 3px;
            font-size: 17px;
-           border: 2px solid #000;
-           background-color: #000;
-           color: var(--accent-color);
+           outline: none;
+           background-color: #fff;
+           border: 2px solid var(--primary-color);
+           color: #000;
 
            &:hover {
-               background-color: #1f1f1f;
-               color: var(--primary-color);
-               border: 2px solid var(--primary-color);
+               background-color: var(--accent-color);
            }
        }
     }

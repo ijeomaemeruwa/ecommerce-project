@@ -1,6 +1,4 @@
-.card {
-    display: flex;
-    flex-direction: row;
+.card_grid {
     justify-content: space-evenly;
     margin: 3rem auto;
 }
@@ -9,6 +7,8 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    border-radius: 5px;
+
 
     &:hover {
       cursor: pointer;

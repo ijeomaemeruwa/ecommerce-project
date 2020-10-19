@@ -42,7 +42,7 @@ export class BestSellerData extends Component {
         const { bestSeller } = this.state
     return (
     <div className="bestseller_section row mx-auto my-5">
-        <h3 className="text-center my-3">BestSellers</h3>
+        <h3>BestSellers</h3>
       {
         bestSeller.map(({id, ...otherBestSellerProps}) => (
             <BestSeller 

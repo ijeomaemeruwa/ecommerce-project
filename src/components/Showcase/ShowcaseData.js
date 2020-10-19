@@ -21,7 +21,7 @@ export class ShowcaseData extends Component {
     }
     render() {
     return (
-    <div className="card">
+    <div className="card_grid row mx-auto my-5">
       {
         this.state.cards.map(({id, imageURL, title, size}) => (
            <Showcase 
