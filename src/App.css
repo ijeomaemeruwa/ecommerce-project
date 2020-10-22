@@ -1,12 +1,15 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
+/*
+--accent-color:#f5e5df;
 
+*/
 :root {
   --primary-color: #d5a796;
-  --secondary-color: #757f6f;
-  --accent-color:#f5e5df;
-  --white: #fefffe;
+  --secondary-color: #000;
+  --accent-color:#d9ccbc;
+  --white: #fefefe;
   --black: #1f1f1f;
 }
 
@@ -19,6 +22,10 @@
 body {
   font-family: 'Jost', sans-serif !important;
   background: var(--white) !important;
+}
+
+a {
+  text-decoration: none;
 }
 
 .logo {
