@@ -1,12 +1,12 @@
 footer {
-    background: var(--accent-color);
-    color: #1f1f1f;
+    background: var(--secondary-color);
+    color: var(--white);
 
 .footer_content {
     padding: 2rem 4rem;
        
     h5 {
-        color: #000;
+        color: var(--primary-color);
         font-weight: bold;
         cursor: pointer;
     }

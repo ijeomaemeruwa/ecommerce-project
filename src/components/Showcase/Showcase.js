@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Showcase/Showcase.scss'
+import { Link } from 'react-router-dom'
 
 export const Showcase = ({ text, image, size }) => {
     return (
@@ -9,7 +10,7 @@ export const Showcase = ({ text, image, size }) => {
 
     <div className="card_content">
      <h2 className="title">{text}</h2><br />
-     <p className="item_link">SHOP NOW</p>
+     <Link to="/shoppage" className="item_link">SHOP NOW</Link>
     </div>
 
     </div>      

@@ -1,10 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import PersonOutlineRoundedIcon from '@material-ui/icons/PersonOutlineRounded';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import { auth } from '../../../firebase/firebase.utils';
 
 
-export const UserMenu = () => {
+export const UserMenu = ({ currentUser }) => {
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     const handleClick = (event) => {
@@ -28,9 +30,21 @@ export const UserMenu = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>My Account</MenuItem>
-        <MenuItem onClick={handleClose}>My Orders</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <Link to="/createaccount">
+          <MenuItem onClick={handleClose}>Join Oatts</MenuItem>
+        </Link>
+        {
+          currentUser ? (
+            <div className="option" onClick={() => auth.signOut()}>
+              LOG OUT
+            </div>
+          ) : (
+            <Link className="option" to="/login">
+             <MenuItem onClick={handleClose}>Log In</MenuItem>
+            </Link>
+          )
+        }
+        <MenuItem onClick={handleClose}>My Orders</MenuItem> 
       </Menu>
     </div>
   );
