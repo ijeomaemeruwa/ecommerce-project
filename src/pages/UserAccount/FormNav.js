@@ -1,8 +1,9 @@
 import React from 'react'
+import '../UserAccount/UserAccountPage.scss'
 
 export const FormNav = ({selectedTab, onClick}) => {
     return (
-    <div>
+    <div className="form_nav">
        <ul className="nav nav-tabs" id="myTab" role="tablist">
 
         <li className="nav-item">

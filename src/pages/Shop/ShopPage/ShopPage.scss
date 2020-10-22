@@ -1,0 +1,53 @@
+// Shop Page
+.shop_page {
+    padding: 2rem;
+}
+
+
+// Shop Page Preview 
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .preview_content {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// Shop Page Items
+.preview_items {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+
+    .image {
+        width: 100%;
+        height: 90%;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .preview_footer {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+
+        .product_name, .product_price {
+            text-align: center;
+            letter-spacing: 1px;
+        }
+    }
+}

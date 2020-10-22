@@ -1,32 +1,125 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
+import { FormInput } from '../../components/FormInput/FormInput'
+import { Button } from '../../components/Button/Button'
+import '../UserAccount/UserAccountPage.scss'
 
-export const CreateAccount = () => {
+import { 
+    auth, 
+    createUserProfile, 
+    signInWithGoogle 
+    } 
+    from '../../firebase/firebase.utils'
+
+export class CreateAccount extends React.Component {
+    state = {
+        displayName: '',
+        email: '',
+        password: '',
+        confirmPassword: ''
+    }
+
+    handleSubmit = async event => {
+        event.preventDeafult();
+
+        const { displayName, email, password, confirmPassword} = this.state
+        if(password !== confirmPassword) {
+            alert('password does not match')
+            return;
+        }
+
+        try {
+            const { user } = await auth.createUserProfile(
+                email,
+                password
+            );
+        await createUserProfile( user, {displayName})
+        this.setState({
+        displayName: '',
+        email: '',
+        password: '',
+        confirmPassword: ''
+        });
+        } catch(error){
+            console.error(error);
+        }
+    }
+
+    handleChange = e => {
+        e.preventDeafult();
+        const { name, value } = e.target;
+        this.setState({ [name]: value })
+    }
+
+    render() {
+        const { displayName, email, password, confirmPassword} = this.state
     return (
     <div>
-        <div>
-        <div>
+        <div className="user_access">
+        <div className="title">
         <h4>CREATE ACCOUNT</h4>
         </div>
-        <Form>
+        <Form className="form" onSubmit={this.handleSubmit}>
+
         <Form.Group controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Label>EMAIL</Form.Label>
+        <FormInput
+        name="email" 
+        type="email" 
+        value={email}
+        handleChange={this.handleChange}
+        placeholder="Email"
+        required
+        />
         </Form.Group>
-        <Form.Group controlId="formBasicFirstName">
-        <Form.Label>First Name</Form.Label>
-        <Form.Control type="text" placeholder="First Name" />
-        </Form.Group>
+
         <Form.Group controlId="formBasicLastName">
-        <Form.Label>Last Name</Form.Label>
-        <Form.Control type="text" placeholder="Last Name" />
+        <Form.Label>USERNAME</Form.Label>
+        <FormInput
+        name="username"
+        type="text" 
+        value={displayName} 
+        handleChange={this.handleChange}
+        placeholder="UserName"
+        required 
+        />
         </Form.Group>
+
         <Form.Group controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Label>PASSWORD</Form.Label>
+        <FormInput 
+        name="password"
+        type="password"
+        value={password}
+        handleChange={this.handleChange} 
+        placeholder="Password"
+        required
+        />
         </Form.Group>
+
+        <Form.Group controlId="formBasicPassword">
+        <Form.Label>CONFIRM PASSWORD</Form.Label>
+        <FormInput 
+        name="confirmPassword"
+        type="confirmPassword"
+        value={confirmPassword}
+        handleChange={this.handleChange} 
+        placeholder="Confirm Password"
+        required
+        />
+        </Form.Group>
+
+        <div className="buttons">
+        <Button type="submit">CREATE ACCOUNT</Button>
+         <Button type="button" onClick={signInWithGoogle} isGoogleSignIn >
+             {''}
+             GOOGLE {''}
+         </Button>
+        </div>
+        
         </Form>
         </div>   
         </div>
     )
+}
 }

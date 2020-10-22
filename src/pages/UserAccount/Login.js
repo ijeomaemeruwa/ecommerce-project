@@ -1,24 +1,80 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
+import { FormInput } from '../../components/FormInput/FormInput'
+import '../UserAccount/UserAccountPage.scss'
 
-export const Login = () => {
+import { Button } from '../../components/Button/Button'
+import { auth, signInWithGoogle } from '../../firebase/firebase.utils'
+
+export class Login extends React.Component {
+    state = {
+        email: '',
+        password: ''
+    }
+     
+    handleSubmit = async e => {
+        e.preventDefault();
+        const { email, password } = this.state;
+        try {
+            await auth.signInWithEmailAndPassword(email, password)
+            this.setState({ email: '', password: '' })
+        } catch(error) {
+            console.log(error);
+        }    
+    }
+
+
+    handleChange = event => {
+        event.preventDeafult();
+        const { name, value } = event.target;
+        this.setState({ [name]: value })
+    }
+    
+
+    render() {
+        const { email, password} = this.state
     return (
         <div>
-        <div className="login">
-        <div className="login_text">
+        <div className="user_access">
+        <div className="title">
         <h4>LOG IN</h4>
         </div>
-        <Form>
-         <Form.Group controlId="formBasicEmail">
-         <Form.Label>Email address</Form.Label>
-         <Form.Control type="email" placeholder="Enter email" />
-         </Form.Group>
-         <Form.Group controlId="formBasicPassword">
-         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+
+        <Form className="form" onSubmit={this.handleSubmit}>
+
+        <Form.Group controlId="formBasicEmail">
+        <Form.Label>EMAIL</Form.Label>
+        <FormInput
+        name="email" 
+        type="email" 
+        value={email}
+        handleChange={this.handleChange}
+        placeholder="Email"
+        required
+        />
         </Form.Group>
-        </Form>
-        </div>   
+        
+        <Form.Group controlId="formBasicPassword">
+        <Form.Label>PASSWORD</Form.Label>
+        <FormInput 
+        name="password"
+        type="password"
+        value={password}
+        handleChange={this.handleChange} 
+        placeholder="Password"
+        required
+        />
+        </Form.Group>
+         <div>
+        <Button type="submit">LOG IN</Button>
+         <Button type="button" onClick={signInWithGoogle} isGoogleSignIn >
+             {''}
+             GOOGLE {''}
+         </Button>
+         </div>
+        </Form>   
+        </div>
         </div>
     )
+}
 }

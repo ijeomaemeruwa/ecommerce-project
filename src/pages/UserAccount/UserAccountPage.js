@@ -2,6 +2,7 @@ import React from 'react'
 import { FormNav } from '../UserAccount/FormNav'
 import { CreateAccount } from '../UserAccount/CreateAccount'
 import { Login } from '../UserAccount/Login'
+import '../UserAccount/UserAccountPage.scss'
 
 export class UserAccountPage extends React.Component {
     state = {
