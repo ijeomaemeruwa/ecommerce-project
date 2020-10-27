@@ -9,7 +9,7 @@ export const ShopPageItem = ({ id, name, price, imageURL }) => {
     <div className="preview_footer">
      <span className="product_name">{name}</span>
      <span className="product_price">{price}</span>
-    </div>       
+    </div>      
     </div>
     )
 }

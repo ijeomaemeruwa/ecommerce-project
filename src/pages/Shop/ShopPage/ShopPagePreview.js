@@ -4,7 +4,7 @@ import { ShopPageItem } from '../ShopPage/ShopPageItem'
 export const ShopPagePreview = ({ category, items }) => {
     return (
     <div className="preview">
-      <h2>{category}</h2> 
+      <h2>{category}</h2>
 
     <div className="preview_content">
         {
@@ -17,8 +17,8 @@ export const ShopPagePreview = ({ category, items }) => {
                 >
                 </ShopPageItem>
             ))
-        }
-    </div>     
+        } 
+    </div> 
     </div>
     )
 }

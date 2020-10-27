@@ -1,7 +1,7 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
 import { FormInput } from '../../components/FormInput/FormInput'
-import { Button } from '../../components/Button/Button'
+import { AuthButton } from '../../components/AuthButton/AuthButton'
 import '../UserAccount/UserAccountPage.scss'
 
 import { 
@@ -110,11 +110,11 @@ export class CreateAccount extends React.Component {
         </Form.Group>
 
         <div className="buttons">
-        <Button type="submit">CREATE ACCOUNT</Button>
-         <Button type="button" onClick={signInWithGoogle} isGoogleSignIn >
+        <AuthButton type="submit">CREATE ACCOUNT</AuthButton>
+         <AuthButton type="button" onClick={signInWithGoogle} isGoogleSignIn >
              {''}
              GOOGLE {''}
-         </Button>
+         </AuthButton>
         </div>
         
         </Form>

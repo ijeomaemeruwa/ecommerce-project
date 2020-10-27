@@ -8,30 +8,30 @@ const SHOP_ITEM_DATA = [
          
     {
         id: '1',
-        imageURL: 'https://www.narscosmetics.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_NARS/default/dwf3f3eccc/hi-res/0194251001104-opened.jpg?sw=856&sh=750&sm=fit',
+        imageURL: 'https://images.asos-media.com/products/nars-extreme-effects-eyeshadow-palette/21556839-1-multi?$n_320w$&wid=317&fit=constrain',
         name: 'NARS Extreme effects eyeshadow palette',
-        price: '59',
+        price: '89',
         size: 'medium'
     },
     {
         id: '2',
-        imageURL: 'https://www.milkmakeup.com/dw/image/v2/BBWR_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9ef14ebf/images/large/hydro-grip-primer-cap.png?sw=260&sh=360&sm=fit',
-        name: 'MilkMakeup Hydro Grip Primer',
-        price: '30',
+        imageURL: 'https://images.asos-media.com/products/bobbi-brown-vitamin-enriched-eye-base/21330320-1-nocolour?$n_320w$&wid=317&fit=constrain',
+        name: 'Bobbi Brown Vitamin Enriched Eye Base',
+        price: '54',
         size: 'medium'
     },
     {
         id: '3',
-        imageURL: 'https://www.narscosmetics.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_NARS/default/dw8ebed992/hi-res/0607845070085.jpg?sw=856&sh=750&sm=fit',
+        imageURL: 'https://images.asos-media.com/products/nars-climax-mascara/10856760-1-black?$n_320w$&wid=317&fit=constrain',
         name: 'NARS Climax mascara',
-        price: '24',
+        price: '35',
         size: 'medium'
     },
     {
         id: '4',
-        imageURL: 'https://cdn.shopify.com/s/files/1/1832/7347/products/RGE30ml_main_700x.png?v=1577369947',
-        name: 'Farsali Rose Gold Elixir',
-        price: '54',
+        imageURL: 'https://images.asos-media.com/products/farsali-volcanic-elixir-30ml/14039639-1-nocolour?$n_320w$&wid=317&fit=constrain',
+        name: 'Farsali Volcanic Elixir 30ml',
+        price: '79',
         size: 'medium'
     },
     {

@@ -20,6 +20,7 @@ export class ShopPage extends React.Component {
                 />
             ))
             }
+              <hr className="hr" style={{width: "100%"}}/> 
             </div>
         )
     }

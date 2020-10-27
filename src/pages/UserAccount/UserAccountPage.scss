@@ -3,7 +3,7 @@
     background: var(--white);
 
     .form_container {
-        height: 90vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -20,7 +20,7 @@
     text-align: center;
 
     .nav {
-      padding: 0 3rem;
+      padding: 0 2rem;
 
       li {
           list-style: none;
@@ -48,7 +48,8 @@
 
     .form {
         padding: 1rem;
-        width: 450px;
+        width: 550px;
         font-size: 1.2rem;
     }
 }
+
