@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
     <div>
      <footer className="footer">
-     <div className="footer_content row padding">
+     <div className="footer_content row mx-auto">
 
      <div className="services col-md-4">
         <h5>INFO</h5>

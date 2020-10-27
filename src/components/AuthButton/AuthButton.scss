@@ -1,0 +1,10 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .auth_btn {
+        width: 100%;
+        padding: 1rem 0;
+    }
+}

@@ -1,3 +1,49 @@
+.newsletter_section {
+    background: var(--white);
+    border-top: 1px solid #d5d5d5;
+
+  .newsletter_img img {
+      background: no-repeat center/cover;
+      position: relative;
+      width: 100%;
+    }
+
+   .newsletter {
+       padding: 2rem;
+   }
+
+   .form {
+       padding: 1rem;
+
+       input, .newsletter_btn {
+           padding: 10px 15px;
+           border: 1px solid var(--secondary-color);
+       }
+
+       input {
+        width: 70%;
+        font-size: 16px;
+       }
+
+       .newsletter_btn {
+           width: 25%;
+           background: var(--secondary-color);
+           color: #feefea;
+           text-align: center;
+           letter-spacing: 2px;
+
+        &:hover {
+            background: #1f1f1f;
+        }
+       }
+   }
+}
+
+
+
+
+
+/*
 .news_section {
     background: url('https://content.asos-media.com/-/media/homepages/unisex/homepages/2020/09-sept/peak-promo/textures/09/mob_hero_live_banner-_peak_squiggle_-9.jpg') no-repeat center;
     background-size: cover;
@@ -40,3 +86,4 @@
        }
     }
 }
+*/

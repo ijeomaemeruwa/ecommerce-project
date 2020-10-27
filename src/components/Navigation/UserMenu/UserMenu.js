@@ -23,28 +23,41 @@ export const UserMenu = ({ currentUser }) => {
       <div aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
       <PersonOutlineRoundedIcon />
       </div>
-      <Menu
+      <Menu className="user_menu"
         id="simple-menu"
         anchorEl={anchorEl}
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <Link to="/createaccount">
-          <MenuItem onClick={handleClose}>Join Oatts</MenuItem>
+        <Link to="/useraccountpage">
+          <MenuItem onClick={handleClose} className="signup">
+            Join Oatts
+          </MenuItem>
         </Link>
+
         {
           currentUser ? (
-            <div className="option" onClick={() => auth.signOut()}>
-              LOG OUT
+            <div onClick={() => auth.signOut()}>
+              <Link className="logout">
+                Log Out
+              </Link>
             </div>
           ) : (
-            <Link className="option" to="/login">
-             <MenuItem onClick={handleClose}>Log In</MenuItem>
+            <Link to="/useraccountpage">
+             <MenuItem onClick={handleClose} className="login">
+               Log In
+             </MenuItem>
             </Link>
           )
         }
-        <MenuItem onClick={handleClose}>My Orders</MenuItem> 
+
+        <Link to="/myorders">
+        <MenuItem onClick={handleClose} className="orders">
+          My Orders
+        </MenuItem> 
+        </Link>
+
       </Menu>
     </div>
   );

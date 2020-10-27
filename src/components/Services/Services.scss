@@ -1,9 +1,15 @@
 .services_section {
-    background: #000;
+    background: var(--secondary-color);
+    color: #fff !important;
     height: 200px;
     width: 100%;
+
+    .services_content {
+     padding: 3rem;
+
+     .content {
+         padding: 1rem 0;
+     }
+    }
 }
 
-/*
- #fee088
-*/

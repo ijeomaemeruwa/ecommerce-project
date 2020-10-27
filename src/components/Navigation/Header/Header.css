@@ -1,23 +1,28 @@
 .header {
     padding: 10px;
     color: var(--secondary-color);
-    background: var(--white);
-    max-width: 100%;
-    border-top: 1px solid var(--secondary-color);
-    border-bottom: 1px solid var(--secondary-color);    
+    background: #feefea;
+    max-width: 100%; 
 }
 
 .header_section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 h2 {
     text-align: center;
 }
 
-
-.header_features span {
+.header_features span, .header_links span {
     padding: 0 1rem;
+    font-size: 17px;
+    cursor: pointer;
 }
+
+.shop, .logo {
+    text-decoration: none !important; 
+    color: var(--secondary-color) !important;  
+  }

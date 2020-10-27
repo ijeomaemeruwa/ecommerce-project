@@ -2,18 +2,30 @@ import React from 'react'
 import '../Showcase/Showcase.scss'
 import { Link } from 'react-router-dom'
 
-export const Showcase = ({ text, image, size }) => {
+export const Showcase = () => {
     return (
     <div>
-    <div className={`${size} card_item`} >
-    <div className="bg_image" style={{ backgroundImage: `url(${image})` }} />
+    <section className="showcase">
+    <div className="showcase_content row">
 
-    <div className="card_content">
-     <h2 className="title">{text}</h2><br />
-     <Link to="/shoppage" className="item_link">SHOP NOW</Link>
+    <div className="image_one col-md-6">
+    <div className="text-center content">
+    <span>Make Up</span>
+     <p>GLAM TIME</p>
+    <Link to="/makeuppage" className="showcase_links">SHOP NOW</Link>
+    </div>
     </div>
 
-    </div>      
+    <div className="image_two m-auto col-md-6">
+    <div className="text-center content">
+    <span>Skin Care</span>
+    <p>SKIN LIKE GOLD</p>
+    <Link to="/skincarepage" className="showcase_links">SHOP NOW</Link>
+    </div> 
+    </div>
+
+    </div>
+    </section>
     </div>
 )
 }
