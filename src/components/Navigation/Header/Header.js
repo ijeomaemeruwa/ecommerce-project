@@ -54,9 +54,11 @@ class Header extends React.Component {
     )
 }
 }
-
+const mapStateToProps = ({ user }) => ({
+    currentUser: user.currentUser
+})
 const mapDispatchToProps = dispatch => ({
     setCurrentUser: user => dispatch(setCurrentUser(user))
   })
   
-  export default connect(null, mapDispatchToProps)(Header)
+  export default connect(mapStateToProps, mapDispatchToProps)(Header)
