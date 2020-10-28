@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import PersonOutlineRoundedIcon from '@material-ui/icons/PersonOutlineRounded';
 import Menu from '@material-ui/core/Menu';
@@ -6,7 +7,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import { auth } from '../../../firebase/firebase.utils';
 
 
-export const UserMenu = ({ currentUser }) => {
+const UserMenu = ({ currentUser }) => {
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     const handleClick = (event) => {
@@ -63,3 +64,8 @@ export const UserMenu = ({ currentUser }) => {
   );
 }       
 
+const mapStateToProps = state => ({
+  currentUser: state.user.currentUser
+})
+
+export default connect(mapStateToProps)(UserMenu);
