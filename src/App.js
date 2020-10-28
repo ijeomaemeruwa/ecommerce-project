@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { NavBar } from '../src/components/Navigation/NavBar/NavBar'
+import NavBar from '../src/components/Navigation/NavBar/NavBar'
 
 const App = () => {
   return (
