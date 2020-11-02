@@ -1,7 +1,7 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
 import { FormInput } from '../../components/FormInput/FormInput'
-import { AuthButton } from '../../components/AuthButton/AuthButton'
+import { AuthButton } from '../../components/Buttons/AuthButton/AuthButton'
 import '../UserAccount/UserAccountPage.scss'
 
 import { 

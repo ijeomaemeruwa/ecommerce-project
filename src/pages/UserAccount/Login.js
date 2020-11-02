@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form'
 import { FormInput } from '../../components/FormInput/FormInput'
 import '../UserAccount/UserAccountPage.scss'
 
-import { AuthButton } from '../../components/AuthButton/AuthButton'
+import { AuthButton } from '../../components/Buttons/AuthButton/AuthButton'
 import { auth, signInWithGoogle } from '../../firebase/firebase.utils'
 
 export class Login extends React.Component {
