@@ -3,11 +3,12 @@ import { connect } from 'react-redux'
 import '../Header/Header.css'
 import { Link } from 'react-router-dom'
 import UserMenu from '../UserMenu/UserMenu'
-import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
+import CartIcon from '../../Cart/CartIcon/CartIcon'
+//import CartIconDropDown from '../../Cart/CartDropDown/CartDropDown'
 import { auth, createUserProfile } from '../../../firebase/firebase.utils'
 import { setCurrentUser } from '../../../redux/actions/user.action'
 
-
+// { hidden ? null :  <CartIconDropDown /> }  
 class Header extends React.Component {
     unsubscribeFromAuth = null;
 
@@ -38,7 +39,7 @@ class Header extends React.Component {
     <div className="header_section sticky-top">
 
     <div className="row header_links">
-    <span>Search</span>
+    <span><Link to="/tips" className="videos">Beauty</Link></span>
     <span><Link to="/shoppage" className="shop">Shop</Link></span>
     </div>
 
@@ -46,17 +47,21 @@ class Header extends React.Component {
 
     <div className="header_features row">
     <span><UserMenu /></span>
-    <span><LocalMallOutlinedIcon /></span>
+    <span><CartIcon /></span> 
     </div>
-
-    </div>       
+   
+    </div> 
+      
     </div>
     )
 }
 }
-const mapStateToProps = ({ user }) => ({
-    currentUser: user.currentUser
-})
+
+  const mapStateToProps = ({ user: {currentUser}, cart: {hidden} }) => ({
+    currentUser,
+    hidden
+  })
+
 const mapDispatchToProps = dispatch => ({
     setCurrentUser: user => dispatch(setCurrentUser(user))
   })

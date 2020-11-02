@@ -1,13 +1,13 @@
 .services_section {
     background: var(--secondary-color);
     color: #fff !important;
-    height: 200px;
+    height: 100%;
     width: 100%;
 
-    .services_content {
+    .services_container {
      padding: 3rem;
 
-     .content {
+     .services_content {
          padding: 1rem 0;
      }
     }

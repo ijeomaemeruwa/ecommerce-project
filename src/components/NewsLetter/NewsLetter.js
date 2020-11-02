@@ -7,7 +7,7 @@ export const NewsLetter = () => {
     <section className="newsletter_section row">
     
     <div className="newsletter_img col-md-6">
-     <img src={require('../../assets/images/image6.jpg')} alt="newsletter" />
+     <img src={require('../../assets/images/face2.jpg')} alt="newsletter" />
     </div>
 
     <div className="col-md-5 newsletter text-left m-auto">

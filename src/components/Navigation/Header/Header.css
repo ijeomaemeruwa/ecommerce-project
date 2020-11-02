@@ -1,8 +1,9 @@
 .header {
     padding: 10px;
-    color: var(--secondary-color);
-    background: #feefea;
+    color: #feefea;
+    background: #000;
     max-width: 100%; 
+    border-top: 1px solid #101010;
 }
 
 .header_section {
@@ -22,7 +23,7 @@ h2 {
     cursor: pointer;
 }
 
-.shop, .logo {
+.shop, .logo, .videos {
     text-decoration: none !important; 
-    color: var(--secondary-color) !important;  
+    color: #fff !important;  
   }

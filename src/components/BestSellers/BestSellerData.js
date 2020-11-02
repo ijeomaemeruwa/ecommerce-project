@@ -1,37 +1,32 @@
 import React, { Component } from 'react'
 import { BestSeller } from '../BestSellers/BestSeller'
-import { ShopButton } from '../ShopButton/ShopButton'
+import { ShopButton } from '../Buttons/ShopButton/ShopButton'
 
 export class BestSellerData extends Component {
     state = {
         bestSeller: [
             {
                 id: '1',
-                image: 'https://www.clinique.com/media/export/cms/products/600x750/cl_sku_6EM601_600x750_0.png',
+                image: 'https://images.asos-media.com/products/clinique-big-genius-little-genius-dramatically-different-moisturising-lotion-set/21497401-1-nocolour?$n_320w$&wid=317&fit=constrain',
                 product: 'Clinique',
-                productPrice: '$25',
-                productLink: '',
                 size: 'medium'
             },
             {
                 id: '2',
-                image: 'https://www.milkmakeup.com/dw/image/v2/BBWR_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9ef14ebf/images/large/hydro-grip-primer-cap.png?sw=260&sh=360&sm=fit',
-                product: 'MilkMakeup',
-                productLink: '',
+                image: 'https://images.asos-media.com/products/revolution-skincare-pink-clay-detoxifying-face-mask/12301686-1-nocolour?$n_320w$&wid=317&fit=constrain',
+                product: 'Revolution',
                 size: 'medium'
             },
             {
                 id: '3',
-                image: 'https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_E1LM01_600x600_0.jpg',
-                product: 'BOBBI BROWN',
-                productLink: '',
+                image: 'https://images.asos-media.com/products/bobbi-brown-summer-glow-trio/20582750-1-nocolour?$n_320w$&wid=317&fit=constrain',
+                product: 'Bobbi Brown',
                 size: 'medium'
             },
             {
                 id: '4',
-                image: 'https://cdn.shopify.com/s/files/1/1832/7347/products/RGE30ml_main_700x.png?v=1577369947',
+                image: 'https://images.asos-media.com/products/farsali-volcanic-elixir-30ml/14039639-1-nocolour?$n_320w$&wid=317&fit=constrain',
                 product: 'Farsali',
-                productLink: '',
                 size: 'medium'
             },
         ]
@@ -39,7 +34,8 @@ export class BestSellerData extends Component {
     render() {
         const { bestSeller } = this.state
     return (
-    <div className="text-center my-5 bestsellers">
+    <> 
+    <section className="text-center my-5 bestsellers">
         <h3>BEST SELLERS</h3>
         <p>Shop from our best sellers collection.</p>
     <div className="bestseller_section row">
@@ -51,11 +47,14 @@ export class BestSellerData extends Component {
         />
         ))
       }
-      </div>   
+      </div> 
+      <div>
       <ShopButton type="button">
           SHOP COLLECTION
       </ShopButton>
-    </div>
+      </div>  
+      </section>
+    </>
     )
  }
 }

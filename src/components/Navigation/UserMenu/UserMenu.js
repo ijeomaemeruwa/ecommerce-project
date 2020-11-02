@@ -59,11 +59,10 @@ const UserMenu = ({ currentUser }) => {
         </MenuItem> 
         </Link>
 
-      </Menu>
+      </Menu> 
     </div>
   );
 }       
-
 const mapStateToProps = state => ({
   currentUser: state.user.currentUser
 })

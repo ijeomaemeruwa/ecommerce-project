@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Hero/Hero.scss'
-import { ShopButton } from '../ShopButton/ShopButton'
+import { ShopButton } from '../Buttons/ShopButton/ShopButton'
 
 export const Hero = () => {
     return (

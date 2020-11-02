@@ -1,10 +1,10 @@
 .bestsellers {
     background: #fff;
+    height: 100%;
 }
 
 .bestseller_section {
-    padding: 2rem;
-    height: 100vh;
+    padding: 3rem;
 
     h3 {
         text-align: center !important;
@@ -12,25 +12,19 @@
     }
 }
 
-.product_grid {
+.products {
     width: 22%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    height: 350px;
     align-items: center;
-
-    &.medium {
-        width: 280px;
-        height: 350px;
-    }
 
     .product_image {
         width: 100%;
         height: 90%;
         background-size: cover;
         background-position: center;
-        padding: 8rem;
+        margin-bottom: 0.5rem;
     }
 
     .product_details {
@@ -43,7 +37,7 @@
         font-size: 18px;
 
         .title {
-            font-weight: bold;
+            width: 100%;
             letter-spacing: 1px;
         }
     }
