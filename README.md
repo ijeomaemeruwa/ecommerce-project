@@ -51,6 +51,14 @@ The project helped with understanding how to manage complex state, when to use s
 
 ---
 
+### Credit
+Images
+* [Asos Face and Body- MakeUp](https://www.asos.com/women/face-body/makeup/cat/?cid=5020&nlid=ww|face+%2B+body|shop+by+product)
+* [Asos Face and Body- Skin Care](https://www.asos.com/women/face-body/skin-care/cat/?cid=4540&nlid=ww|face+%2B+body|shop+by+product)
+* [Unsplash- beauty products](https://unsplash.com)
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
