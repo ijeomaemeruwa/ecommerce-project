@@ -1,9 +1,11 @@
 .user_menu {
-    padding: 10px !important;
+    background: #000 !important;
 
     .signup, .logout, .login, .orders {
         text-decoration: none !important;
-        color: var(--secondary-color) !important;
+        color: #000 !important;
         padding: 10px !important;
+
+    
     }
 }

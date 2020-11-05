@@ -1,9 +1,9 @@
 import React from 'react'
-import { Hero } from '../../components/Hero/Hero'
-import { Showcase } from '../../components/Showcase/Showcase'
-import { Services } from '../../components/Services/Services'
-import { BestSellerData } from '../../components/BestSellers/BestSellerData'
-import { NewsLetter } from '../../components/NewsLetter/NewsLetter'
+import { Hero } from '../../sections/Hero/Hero'
+import { Showcase } from '../../sections/Showcase/Showcase'
+import { Services } from '../../sections/Services/Services'
+import { BestSellerData } from '../../sections/BestSellers/BestSellerData'
+import { NewsLetter } from '../../sections/NewsLetter/NewsLetter'
 import { Footer } from '../../components/Footer/Footer'
 
 export const Home = () => {

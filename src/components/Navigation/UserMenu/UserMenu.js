@@ -1,43 +1,30 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
-import PersonOutlineRoundedIcon from '@material-ui/icons/PersonOutlineRounded';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
 import { auth } from '../../../firebase/firebase.utils';
+
+import { Link } from 'react-router-dom'
+import { BsPerson } from 'react-icons/bs'
+import Dropdown from 'react-bootstrap/Dropdown';
+
 
 
 const UserMenu = ({ currentUser }) => {
-    const [anchorEl, setAnchorEl] = React.useState(null);
-
-    const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
-  
-    const handleClose = () => {
-      setAnchorEl(null);
-    };
-
-  
+      
   return (
     <div>
-      <div aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-      <PersonOutlineRoundedIcon />
-      </div>
-      <Menu className="user_menu"
-        id="simple-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-        <Link to="/useraccountpage">
-          <MenuItem onClick={handleClose} className="signup">
-            Join Oatts
-          </MenuItem>
-        </Link>
+      <Dropdown className="user_menu">
 
-        {
+      <Dropdown.Toggle className="toggle" id="dropdown-basic">
+       <BsPerson />
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+      <Dropdown.Item>
+        <Link to="/createaccount" className="signup">Join Oatts</Link> 
+      </Dropdown.Item>
+
+       <Dropdown.Item>
+       {
           currentUser ? (
             <div onClick={() => auth.signOut()}>
               <Link className="logout">
@@ -45,21 +32,16 @@ const UserMenu = ({ currentUser }) => {
               </Link>
             </div>
           ) : (
-            <Link to="/useraccountpage">
-             <MenuItem onClick={handleClose} className="login">
-               Log In
-             </MenuItem>
-            </Link>
+            <Link to="/login" className="login">Log In</Link>
           )
         }
+       </Dropdown.Item>
+       <Dropdown.Item>
+       <Link to="/myorders" className="orders"> My Orders</Link>
+       </Dropdown.Item>
+      </Dropdown.Menu>
+      </Dropdown> 
 
-        <Link to="/myorders">
-        <MenuItem onClick={handleClose} className="orders">
-          My Orders
-        </MenuItem> 
-        </Link>
-
-      </Menu> 
     </div>
   );
 }       

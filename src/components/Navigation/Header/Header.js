@@ -4,11 +4,11 @@ import '../Header/Header.css'
 import { Link } from 'react-router-dom'
 import UserMenu from '../UserMenu/UserMenu'
 import CartIcon from '../../Cart/CartIcon/CartIcon'
-//import CartIconDropDown from '../../Cart/CartDropDown/CartDropDown'
+import CartModal from '../../../components/Cart/CartModal/CartModal'
 import { auth, createUserProfile } from '../../../firebase/firebase.utils'
 import { setCurrentUser } from '../../../redux/actions/user.action'
 
-// { hidden ? null :  <CartIconDropDown /> }  
+
 class Header extends React.Component {
     unsubscribeFromAuth = null;
 
@@ -51,7 +51,7 @@ class Header extends React.Component {
     </div>
    
     </div> 
-      
+     <CartModal /> 
     </div>
     )
 }

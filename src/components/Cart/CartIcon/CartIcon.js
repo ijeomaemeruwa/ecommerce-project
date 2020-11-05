@@ -2,13 +2,13 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { toggleCart } from '../../../redux/actions/cart.action'
 import '../CartIcon/cartIcon.scss'
-import LocalMallRoundedIcon from '@material-ui/icons/LocalMallRounded';
+import { BsBag } from 'react-icons/bs'
 
 const CartIcon = ({toggleCart}) => {
 return (
     <>
     <div className="cart_icon" onClick={toggleCart}>
-     <LocalMallRoundedIcon className="shopping_icon" />
+     <BsBag className="shopping_icon" />
      <span className="shopping_item_count">
          0
     </span>   
