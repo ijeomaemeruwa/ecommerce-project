@@ -1,7 +1,7 @@
 .hero {
     background: url('../../assets/images/hero1.jpg') no-repeat center/cover;
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
 .hero_content {
@@ -12,7 +12,7 @@
     align-items: center;
     margin: auto;
     padding: 6rem;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 
 h3 {
@@ -31,20 +31,6 @@ p {
     letter-spacing: 2px;
 }
 
-.hero_btn {
-    padding: 10px;
-    border: none;
-    outline: none;
-    background: var(--secondary-color);
-    color: #feefea;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 16px;
-
-    &:hover {
-        background: #1f1f1f;
-    }
-}
 }
 .overlay {
     background: rgba(105, 105, 105, 0.3);

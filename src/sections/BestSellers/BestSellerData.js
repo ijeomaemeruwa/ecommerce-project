@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { BestSeller } from '../BestSellers/BestSeller'
 import { ShopButton } from '../../components/Buttons/ShopButton/ShopButton'
 
+import { Link } from 'react-router-dom'
+
 export class BestSellerData extends Component {
     state = {
         bestSeller: [
@@ -50,7 +52,10 @@ export class BestSellerData extends Component {
       </div> 
       <div>
       <ShopButton type="button" className="shop_btn">
-          SHOP COLLECTION
+      <Link to="/shoppage" className="link_btn"
+      >
+      SHOP COLLECTION
+      </Link>
       </ShopButton>
       </div>  
       </section>
