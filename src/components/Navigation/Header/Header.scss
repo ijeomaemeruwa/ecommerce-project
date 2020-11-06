@@ -12,17 +12,19 @@
     width: 100%;
 }
 
-h2 {
-    text-align: center;
-}
 
-.header_features span, .header_links span {
+.header_features span, 
+.header_links span {
     padding: 0 1rem;
     font-size: 17px;
     cursor: pointer;
+    color: #fff;
 }
 
-.shop, .logo, .videos {
+.shop, 
+.logo, 
+.login, 
+.create-account {
     text-decoration: none !important; 
-    color: #fff !important;  
-  }
+    color: #fff !important;
+}
