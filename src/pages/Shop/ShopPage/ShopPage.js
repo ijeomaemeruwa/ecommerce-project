@@ -1,7 +1,7 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import '../ShopPage/ShopPage.scss'
 import SHOP_ITEM_DATA from '../ShopData/ShopData'
-import { ShopPagePreview } from '../ShopPage/ShopPagePreview'
+import ShopPagePreview from '../ShopPage/ShopPagePreview'
 
 export class ShopPage extends React.Component {
     state = {
@@ -11,7 +11,8 @@ export class ShopPage extends React.Component {
     render() {
         const { collection } = this.state
         return (
-            <Fragment className="shop_page">
+            <>
+            <div className="shop_page">
             {
                 collection.map(({ id, ...otherShopPageProps }) => (
                 <ShopPagePreview 
@@ -20,8 +21,8 @@ export class ShopPage extends React.Component {
                 />
             ))
             }
-              <hr className="hr" style={{width: "100%"}}/> 
-            </Fragment>
+            </div>
+            </>
         )
     }
 }

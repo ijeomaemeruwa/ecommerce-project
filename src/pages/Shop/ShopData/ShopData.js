@@ -1,9 +1,9 @@
 const SHOP_ITEM_DATA = [
 
-//Makeup Items Array
+//Collection Items Array
 {
-    id: '1',
-    category: 'MAKE UP',
+    id: '200',
+    title: 'SHOP ALL ITEMS',
     items: [
          
     {
@@ -64,109 +64,54 @@ const SHOP_ITEM_DATA = [
     },
     {
         id: '9',
+        imageURL: 'https://images.asos-media.com/products/the-ordinary-100-organic-cold-pressed-rose-hip-seed-oil-30ml/7554633-1-rosehipseedoil?$n_320w$&wid=317&fit=constrain',
+        name: 'The Ordinary Rose Hip Seed Oil 30ml',
+        price: '15'
+    },
+    {
+        id: '10',
+        imageURL: 'https://images.asos-media.com/products/garnier-micellar-cleansing-water-sensitive-skin-400ml-rrp-599/12349780-1-nocolour?$n_320w$&wid=317&fit=constrain',
+        name: 'Garnier Micellar Cleansing Water 400ml',
+        price: '8'
+    },
+    {
+        id: '11',
         imageURL: 'https://images.asos-media.com/products/revolution-reloaded-palette-iconic-fever/11952647-1-iconicfever?$n_320w$&wid=317&fit=constrain',
         name: 'Revolution Reloaded palette iconic fever',
         price: '7',
         size: 'medium'
     },
     {
-        id: '10',
+        id: '12',
         imageURL: 'https://images.asos-media.com/products/revolution-luxury-banana-powder/11953951-1-bananapowder?$n_320w$&wid=317&fit=constrain',
         name: 'Revolution Luxury Banana Powder',
         price: '8',
         size: 'medium'
     },
     {
-        id: '11',
+        id: '13',
         imageURL: 'https://images.asos-media.com/products/benefit-hoola-bronzing-powder/8457550-1-bronzingpowder?$n_320w$&wid=317&fit=constrain',
         name: 'Benefit Hoola Bronzing Powder',
         price: '48',
         size: 'medium'
     },
     {
-        id: '12',
+        id: '14',
         imageURL: 'https://images.asos-media.com/products/charlotte-tilbury-eyes-to-mesmerise-rose-gold/22401896-1-rosegold?$n_320w$&wid=317&fit=constrain',
         name: 'Charlotte Tilbury Eyes to Mesmerise - Rose Gold',
         price: '35',
         size: 'medium'
-    }
-   ]
-},
-//Skincare Items Array
-{
-    id: '2',
-    category: 'SKIN CARE',
-    items: [
+    },
     {
-        id: '1',
+        id: '15',
         imageURL: 'https://images.asos-media.com/products/pixi-glow-tonic-with-5-glycolic-acid-250ml/4856599-1-glowtonic?$n_320w$&wid=317&fit=constrain',
         name: 'PIXI Glow Tonic 250ml',
         price: '29'
     },
     {
-        id: '2',
+        id: '16',
         imageURL: 'https://images.asos-media.com/products/clinique-splash-of-hydration-gift-set/21497168-1-nocolour?$n_320w$&wid=317&fit=constrain',
         name: 'Clinique Splash of Hydration Set',
-        price: ''
-    },
-    {
-        id: '3',
-        imageURL: 'https://images.asos-media.com/products/the-ordinary-100-organic-cold-pressed-rose-hip-seed-oil-30ml/7554633-1-rosehipseedoil?$n_320w$&wid=317&fit=constrain',
-        name: 'The Ordinary Rose Hip Seed Oil 30ml',
-        price: '15'
-    },
-    {
-        id: '4',
-        imageURL: 'https://images.asos-media.com/products/garnier-micellar-cleansing-water-sensitive-skin-400ml-rrp-599/12349780-1-nocolour?$n_320w$&wid=317&fit=constrain',
-        name: 'Garnier Micellar Cleansing Water 400ml',
-        price: '8'
-    },
-    {
-        id: '',
-        imageURL: '',
-        name: '',
-        price: ''
-    },
-    {
-        id: '',
-        imageURL: '',
-        name: '',
-        price: ''
-    },
-    {
-        id: '',
-        imageURL: '',
-        name: '',
-        price: ''
-    },
-    {
-        id: '',
-        imageURL: '',
-        name: '',
-        price: ''
-    },
-    {
-        id: '',
-        imageURL: '',
-        name: '',
-        price: ''
-    },
-    {
-        id: '',
-        imageURL: '',
-        name: '',
-        price: ''
-    },
-    {
-        id: '',
-        imageURL: '',
-        name: '',
-        price: ''
-    },
-    {
-        id: '',
-        imageURL: '',
-        name: '',
         price: ''
     }
 ]

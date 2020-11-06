@@ -1,11 +1,6 @@
 // Shop Page
 .shop_page {
     padding: 2rem;
-
-    
-    .hr {
-        color: #1f1f1f;
-    }
 }
 
 
@@ -13,23 +8,23 @@
 .preview {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5rem;
 
     h2 {
         font-size: 3rem;
         padding: 2.5rem;
-        margin-bottom: 1.5rem;
         color: #1f1f1f;
     }
 
     .preview_content {
+        height: 100%;
+        width: 100%;
+        padding: 3rem;
         display: flex;
-        justify-content: space-between;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
     }
-}
-
-.shop_preview_btn {
-    padding-top: 4rem;
 }
 
 // Shop Page Items

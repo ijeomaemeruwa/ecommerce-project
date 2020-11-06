@@ -1,34 +1,29 @@
 import React from 'react'
-import ShopPageItem from '../ShopPage/ShopPageItem'
-import { ShopButton } from '../../../components/Buttons/ShopButton/ShopButton'
+import ShopItem from '../ShopPage/ShopItem'
+//import { ShopButton } from '../../../components/Buttons/ShopButton/ShopButton'
 
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 
-export const ShopPagePreview = ({ category, items }) => {
+const ShopPagePreview = ({ title, items }) => {
     return (
     <>
     <div className="preview text-center">
-      <h2>{category}</h2>
+      <h2>{title}</h2>
 
     <div className="preview_content">
         {
-            items
-            .filter((item, index) => index < 4)
-            .map((item) => (
-                <ShopPageItem 
+            items.map((item) => (
+                <ShopItem 
                 key={item.id}
                 item={item}
                 >
-                </ShopPageItem>
+                </ShopItem>
             ))
         } 
     </div> 
-    <div className="shop_preview_btn">
-    <ShopButton type="button" className="shop_btn">
-    <Link to="/makeupshop">SHOP COLLECTION</Link>
-    </ShopButton> 
-    </div>
     </div>
     </>
     )
 }
+
+export default ShopPagePreview;
