@@ -68,7 +68,7 @@ export class Login extends React.Component {
     
         <div className="text-center">
         <CustomButton type="submit" 
-        className="text-center">
+        className="custom_btn">
             LOG IN
         </CustomButton><br />
 

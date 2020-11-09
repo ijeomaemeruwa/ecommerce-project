@@ -1,8 +1,5 @@
 import React from 'react'
 import ShopItem from '../ShopPage/ShopItem'
-//import { ShopButton } from '../../../components/Buttons/ShopButton/ShopButton'
-
-//import { Link } from 'react-router-dom'
 
 const ShopPagePreview = ({ title, items }) => {
     return (

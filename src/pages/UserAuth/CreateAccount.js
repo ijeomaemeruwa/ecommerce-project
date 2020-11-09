@@ -94,7 +94,7 @@ export class CreateAccount extends React.Component {
 
         <div className="text-center">
         <CustomButton type="submit" 
-        className="text-center">
+        className="custom_btn">
             CREATE ACCOUNT
         </CustomButton><br />
 
