@@ -8,24 +8,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    margin: auto;
-    padding: 6rem;
+    text-align: center;
+    padding: 20rem 0 5rem 0;
     height: 100vh;
     width: 100%;
 
 h3 {
     font-size: 3.5rem;
     // font-family: 'Cinzel', serif;
-    padding-top: 4rem;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-weight: bold;
     color: #fff;
 }
 
 p {
-    color: #fff;
+    color: #feefea;
     font-size: 1.5rem;
     color: #feefea;
     letter-spacing: 2px;
@@ -33,14 +31,13 @@ p {
 
 }
 .overlay {
-    background: rgba(105, 105, 105, 0.3);
+    background: rgba(105, 105, 105, 0.5);
     height: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .hero_content {
-      padding: 2rem;
 
 h3 {
     font-size: 2rem;

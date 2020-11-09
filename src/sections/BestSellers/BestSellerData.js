@@ -50,14 +50,12 @@ export class BestSellerData extends Component {
         ))
       }
       </div> 
-      <div>
       <CustomButton type="button">
-      <Link to="/shoppage" className="link_btn"
+      <Link to="/shoppage" className="link_btn custom_btn"
       >
       SHOP COLLECTION
       </Link>
-      </CustomButton>
-      </div>  
+      </CustomButton> 
       </section>
     </>
     )

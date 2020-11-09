@@ -5,11 +5,25 @@
 
 .bestseller_section {
     padding: 3rem;
-
+   
     h3 {
         text-align: center !important;
         align-items: center;
     }
+}
+
+.link_btn {
+    text-decoration: none;
+    color: #feefea;
+
+   &:hover {
+    text-decoration: none;
+    color: #feefea;
+  }
+}
+
+.custom_btn {
+    margin: 0 auto;
 }
 
 .products {
