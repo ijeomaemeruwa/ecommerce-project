@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form'
 import { FormInput } from '../../components/FormInput/FormInput'
 import './UserAuth.scss'
 
-import { AuthButton } from '../../components/Buttons/AuthButton/AuthButton'
+import CustomButton from '../../components/CustomButton/CustomButton'
 import { auth, signInWithGoogle } from '../../firebase/firebase.utils'
 
 export class Login extends React.Component {
@@ -67,18 +67,19 @@ export class Login extends React.Component {
         </Form.Group>
     
         <div className="text-center">
-        <AuthButton type="submit" className="auth_btn">
+        <CustomButton type="submit" 
+        className="text-center">
             LOG IN
-        </AuthButton><br />
+        </CustomButton><br />
 
-        <h5>OR</h5>
-        <h5>SIGN IN WITH GOOGLE</h5><br />
-        <AuthButton type="button" 
-         className="google_auth" 
+            <h5>OR</h5>
+            <h5>SIGN IN WITH GOOGLE</h5><br />
+            
+        <CustomButton type="button" 
          onClick={signInWithGoogle} isGoogleSignIn >
              {''}
              GOOGLE {''}
-         </AuthButton>
+         </CustomButton>
         </div>
     
         </Form>   

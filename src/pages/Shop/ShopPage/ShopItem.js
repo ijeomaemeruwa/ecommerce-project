@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import '../ShopPage/ShopPage.scss'
 
-import CartButton from '../../../components/Buttons/CartButton/CartButton'
+import CustomButton from '../../../components/CustomButton/CustomButton'
 import { addItem } from '../../../redux/actions/cart.action'
 
 const ShopItem = ({ item, addItem }) => {
@@ -15,9 +15,9 @@ const ShopItem = ({ item, addItem }) => {
     <div className="preview_footer">
      <span className="product_name">{name}</span>
      <span className="product_price">{price}</span>
-     <CartButton 
-      onClick={() => addItem(item)}
-     />
+     <CustomButton shop onClick={() => addItem(item)}>
+     ADD TO CART
+    </CustomButton>
     </div>
     </div>
     </>
@@ -28,5 +28,5 @@ const mapDispatchToProps = dispatch => ({
     addItem: item => dispatch(addItem(item)) 
 })
 
-export default connect(mapDispatchToProps)(ShopItem)
+export default connect(null, mapDispatchToProps)(ShopItem)
 

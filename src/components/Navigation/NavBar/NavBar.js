@@ -10,7 +10,7 @@ import { Home } from '../../../pages/Home/Home'
 import { ShopPage } from '../../../pages/Shop/ShopPage/ShopPage'
 import { CreateAccount } from '../../../pages/UserAuth/CreateAccount'
 import { Login } from '../../../pages/UserAuth/Login'
-import CheckoutPage from '../../../pages/CheckoutPage/CheckoutPage'
+import CheckoutPage from '../../../pages/CheckOut/CheckoutPage/CheckoutPage'
 
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 

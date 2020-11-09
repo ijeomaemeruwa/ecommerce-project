@@ -5,14 +5,12 @@ import { Link } from 'react-router-dom'
 import { auth } from '../../../firebase/firebase.utils';
 
 import CartIcon from '../../Cart/CartIcon/CartIcon'
-import CartModal from '../../../components/Cart/CartModal/CartModal'
 
 import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from '../../../redux/selectors/user.selector';
-import { selectCartHidden } from '../../../redux/selectors/cart.selector';
 
 
-const Header = ({ currentUser, hidden }) => {
+const Header = ({ currentUser}) => {
    
     return (
     <div className="header">
@@ -41,20 +39,16 @@ const Header = ({ currentUser, hidden }) => {
         (<Link to="/login" className="login">Log In</Link>)
     }
 
-    <span><CartIcon /></span>
+    <span><Link to="/checkoutpage"><CartIcon /></Link></span>
     </div>
     
     </div>
-    {
-        hidden ? null : <CartModal />
-    } 
     </div>
     )
 }
 
   const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser,
-    hidden: selectCartHidden
   })
 
   

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { BestSeller } from '../BestSellers/BestSeller'
-import { ShopButton } from '../../components/Buttons/ShopButton/ShopButton'
+import CustomButton from '../../components/CustomButton/CustomButton'
 
 import { Link } from 'react-router-dom'
 
@@ -51,12 +51,12 @@ export class BestSellerData extends Component {
       }
       </div> 
       <div>
-      <ShopButton type="button" className="shop_btn">
+      <CustomButton type="button">
       <Link to="/shoppage" className="link_btn"
       >
       SHOP COLLECTION
       </Link>
-      </ShopButton>
+      </CustomButton>
       </div>  
       </section>
     </>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Hero.scss'
 import { Link } from 'react-router-dom'
-import { ShopButton } from '../../components/Buttons/ShopButton/ShopButton'
+import CustomButton from '../../components/CustomButton/CustomButton'
 
 export const Hero = () => {
     return (
@@ -12,12 +12,12 @@ export const Hero = () => {
     <p className="mt-5 col-md-6 col-sm-10">
         Shop authentic beauty and skin care products delivered to your doorstep.
     </p>
-    <ShopButton type="button">
+    <CustomButton type="button">
     <Link to="/shoppage" className="link_btn"
     >
       SHOP NOW
     </Link>
-    </ShopButton>
+    </CustomButton>
     </div>
     </div>       
     </div>
