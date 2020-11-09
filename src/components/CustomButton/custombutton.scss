@@ -15,28 +15,33 @@
     justify-content: center;
   
     &:hover {
-      background-color: #1f1f1f;
+      background: #1f1f1f;
       color: #feefea;
     }
   
     &.google-sign-in {
+      background: transparent;
       border: 2px solid #4285f4;
-      color: #4285f4;
+      color: #4285f4 !important;
   
       &:hover {
-        background-color: #357ae8;
+        background: #357ae8;
+        color: #fff !important;
         border: none;
       }
     }
   
     &.shop {
       background-color: #fff;
-      color: #000;
+      color: #000 !important;
       border: 1px solid #000;
+      width: 100%;
+      position: absolute;
+      top: 400px;
   
       &:hover {
         background-color: #000;
-        color: white;
+        color: white !important;
         border: none;
       }
     }
