@@ -14,9 +14,7 @@ A full beauty ecommerce website application built from scratch.
 * Redux
 * SASS
 * Bootstrap
-* Material UI
 * Firebase
-* GraphQL
 
 ---
 
@@ -43,8 +41,6 @@ The live link is unavailable because the project is still under development
 
 ### In Development
 
-* Cart Component
-* Checkout Process
 * Payment integration using Stripe
 
 ---
