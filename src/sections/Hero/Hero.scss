@@ -1,5 +1,6 @@
 .hero {
     background: url('../../assets/images/hero1.jpg') no-repeat center/cover;
+    object-fit: cover;
     position: relative;
     height: 100%;
     width: 100%;
@@ -40,11 +41,13 @@ p {
   .hero_content {
 
 h3 {
-    font-size: 2rem;
-    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0;
 }
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    letter-spacing: 0;
 }
   }   
 }

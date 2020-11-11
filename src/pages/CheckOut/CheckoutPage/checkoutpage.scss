@@ -1,5 +1,5 @@
 .checkout {
-    width: 55%;
+    width: 60%;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
       border-bottom: 1px solid darkgrey;
   
       .sections {
-        width: 23%;
+        width: 28%;
   
         &:last-child {
           width: 8%;
@@ -23,9 +23,11 @@
     }
   
     .total {
-      margin-top: 30px;
-      margin-left: auto;
-      font-size: 36px;
+
+    span {
+      margin: 0 0 0 auto !important;
+      font-size: 30px !important;
+    }
     }
   }
   

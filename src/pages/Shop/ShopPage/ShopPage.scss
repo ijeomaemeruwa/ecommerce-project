@@ -58,3 +58,33 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .preview {
+    
+        h2 {
+            font-size: 2rem;
+            padding: 2rem;
+        }
+    }
+
+    .preview_content {
+      padding: 1rem;
+    }
+
+    .preview_items {
+        width: 100%;
+    }
+}
+/*
+@media screen and (max-width: 960px) {
+    .preview_items {
+        width: 50%;
+        padding: 1rem;
+
+    .shop {
+        padding: 0 1rem;
+    }
+    }
+}
+*/

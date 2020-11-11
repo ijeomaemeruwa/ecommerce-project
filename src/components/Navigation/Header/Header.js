@@ -1,6 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import {withRouter} from 'react-router-dom'
 import '../Header/Header.scss'
+
 import { Link } from 'react-router-dom'
 import { auth } from '../../../firebase/firebase.utils';
 
@@ -10,7 +12,7 @@ import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from '../../../redux/selectors/user.selector';
 
 
-const Header = ({ currentUser}) => {
+const Header = ({ currentUser, history}) => {
    
     return (
     <div className="header">
@@ -39,7 +41,11 @@ const Header = ({ currentUser}) => {
         (<Link to="/login" className="login">Log In</Link>)
     }
 
-    <span><Link to="/checkoutpage"><CartIcon /></Link></span>
+    <span>
+      <Link onClick={() => history.push("/checkoutpage")}>
+      <CartIcon />
+      </Link>
+    </span>
     </div>
     
     </div>
@@ -52,4 +58,4 @@ const Header = ({ currentUser}) => {
   })
 
   
-  export default connect(mapStateToProps)(Header)
+  export default withRouter(connect(mapStateToProps)(Header))

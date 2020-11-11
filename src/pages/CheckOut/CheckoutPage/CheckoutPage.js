@@ -7,8 +7,6 @@ import CheckOutItem from '../CheckOutItem/CheckOutItem'
 
 import '../CheckoutPage/checkoutpage.scss'
 
-
-
 const CheckoutPage = ({cartItems, total}) => {
     return (
       <>
@@ -18,7 +16,7 @@ const CheckoutPage = ({cartItems, total}) => {
           <span>PRODUCT</span>
         </div>
         <div className="sections">
-          <span>PRODUCT</span>
+          <span></span>
         </div>
         <div className="sections">
           <span>QUANTITY</span>

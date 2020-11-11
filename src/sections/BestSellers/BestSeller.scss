@@ -55,18 +55,16 @@
             letter-spacing: 1px;
         }
     }
-
-
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .bestseller_section {
        display: flex;
        flex-direction: column;
-       padding: 3rem;
+       padding: 1rem;
     }
 
     .products {
-        width: 22%;
+        width: 80%;
     }
 }

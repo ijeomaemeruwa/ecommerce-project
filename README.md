@@ -4,7 +4,7 @@
 ### Description
 A full beauty ecommerce website application built from scratch.
 
-<img src="./src/assets/images/oatts.png" alt="oatts home page" />
+<img src="./src/assets/images/homepage2.png" alt="oatts home page" />
 
 ---
 
@@ -14,9 +14,7 @@ A full beauty ecommerce website application built from scratch.
 * Redux
 * SASS
 * Bootstrap
-* Material UI
 * Firebase
-* GraphQL
 
 ---
 
@@ -43,8 +41,6 @@ The live link is unavailable because the project is still under development
 
 ### In Development
 
-* Cart Component
-* Checkout Process
 * Payment integration using Stripe
 
 ---
@@ -77,6 +73,7 @@ In the project directory, you can run:
 ### `npm run build`
 
 ### `npm run eject`
+
 
 
 
