@@ -20,7 +20,7 @@ A full beauty ecommerce website application built from scratch.
 
 ### Live Link
 
-The live link is unavailable because the project is still under development
+https://oatts-ecommerce.netlify.app/
 
 ---
 
