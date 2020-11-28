@@ -21,14 +21,14 @@ export class CreateAccount extends React.Component {
 
     handleSubmit = async event => {
         event.preventDeafult();
-
         const { displayName, email, password } = this.state
 
         try {
-            const { user } = await auth.createUserProfile(
+            const { user } = await auth.createUserWithEmailAndPassword(
                 email,
                 password
             );
+   
         await createUserProfile( user, {displayName})
         this.setState({
         displayName: '',
@@ -40,11 +40,12 @@ export class CreateAccount extends React.Component {
         }
     }
 
+
     handleChange = e => {
-        e.preventDeafult();
         const { name, value } = e.target;
         this.setState({ [name]: value })
     }
+
 
     render() {
         const { displayName, email, password } = this.state
@@ -71,7 +72,7 @@ export class CreateAccount extends React.Component {
         <Form.Group controlId="formBasicLastName">
         <Form.Label>USERNAME</Form.Label>
         <FormInput
-        name="username"
+        name="displayName"
         type="text" 
         value={displayName} 
         handleChange={this.handleChange}

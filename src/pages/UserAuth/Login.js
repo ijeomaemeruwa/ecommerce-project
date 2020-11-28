@@ -5,6 +5,7 @@ import './UserAuth.scss'
 
 import CustomButton from '../../components/CustomButton/CustomButton'
 import { auth, signInWithGoogle } from '../../firebase/firebase.utils'
+import { Link } from 'react-router-dom'
 
 export class Login extends React.Component {
     state = {
@@ -25,7 +26,6 @@ export class Login extends React.Component {
 
 
     handleChange = event => {
-        event.preventDeafult();
         const { name, value } = event.target;
         this.setState({ [name]: value })
     }
@@ -70,10 +70,13 @@ export class Login extends React.Component {
         <CustomButton type="submit" 
         className="custom_btn">
             LOG IN
-        </CustomButton><br />
+        </CustomButton>
+        <Link to="/createAccount">New to Oatts? Sign Up Here</Link>
+        <br />
+        <br />
 
-            <h5>OR</h5>
-            <h5>SIGN IN WITH GOOGLE</h5><br />
+        <h5>OR</h5>
+        <h5>SIGN IN WITH GOOGLE</h5><br />
             
         <CustomButton type="button" 
          onClick={signInWithGoogle} isGoogleSignIn >
@@ -81,7 +84,6 @@ export class Login extends React.Component {
              GOOGLE {''}
          </CustomButton>
         </div>
-    
         </Form>   
         </div>
         </>
