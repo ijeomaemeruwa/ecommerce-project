@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 import '../CartIcon/cartIcon.scss'
 import { BsBag } from 'react-icons/bs'
 import { selectCartItemsCount } from '../../../redux/selectors/cart.selector'
@@ -23,4 +24,4 @@ const mapStateToProps = createStructuredSelector({
 })
 
 
-export default connect(mapStateToProps)(CartIcon)
+export default withRouter(connect(mapStateToProps)(CartIcon));

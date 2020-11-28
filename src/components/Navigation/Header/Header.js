@@ -25,15 +25,10 @@ const Header = ({ currentUser, history}) => {
     <h2><Link to="/" className="logo text-center">OATTS</Link></h2>
 
     <div className="header_features row">
-    <span>
-    <Link to="/createAccount" className="create-account">
-        Sign Up
-    </Link>
-    </span>
     {
         currentUser ? (
         <span onClick={() => auth.signOut()}>
-        <Link className="logout">
+        <Link to="/" className="logout">
         Log Out
         </Link>
         </span>
@@ -42,9 +37,9 @@ const Header = ({ currentUser, history}) => {
     }
 
     <span>
-      <Link onClick={() => history.push("/checkoutpage")}>
+      <div onClick={() => history.push("/checkoutpage")}>
       <CartIcon />
-      </Link>
+      </div>
     </span>
     </div>
     
@@ -52,6 +47,7 @@ const Header = ({ currentUser, history}) => {
     </div>
     )
 }
+
 
   const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser,

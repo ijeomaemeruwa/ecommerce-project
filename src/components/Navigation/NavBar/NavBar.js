@@ -4,7 +4,6 @@ import { setCurrentUser } from '../../../redux/actions/user.action'
 
 import { auth, createUserProfile } from '../../../firebase/firebase.utils'
 
-import { Currency } from '../../Currency/Currency'
 import Header from '../Header/Header'
 import { Home } from '../../../pages/Home/Home'
 import { ShopPage } from '../../../pages/Shop/ShopPage/ShopPage'
@@ -43,7 +42,6 @@ componentWillUnmount() {
     return (
     <>
      <Router>
-     <Currency />
      <Header />
 
      <Switch>
