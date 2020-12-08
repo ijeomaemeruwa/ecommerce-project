@@ -24,7 +24,7 @@ https://oatts-ecommerce.netlify.app/
 
 ---
 
-### Data Flow
+### Project Description
 
 * A user can shop for makeup and beauty products via shop link or showcase links.
 * On adding items to cart, the user can either login or create an account via email, google or continue shopping as a guest. This feature is enabled using firebase authentication.
@@ -41,14 +41,7 @@ https://oatts-ecommerce.netlify.app/
 
 ### In Development
 
-* Payment integration using Stripe
-
----
-
-### Learning Process
-
-Implementing redux to the project was the biggest challenge I faced and a learning process I took advantage of.
-The project helped with understanding how to manage complex state, when to use state, hooks or redux and how to build reusable components like search, buttons and input fields.
+* Context and Nodejs versions
 
 ---
 
